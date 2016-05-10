@@ -20,9 +20,13 @@
 <![endif]-->
 <header>
 	<a href="index.php" id="logo">RILFLIX</a>
+<<<<<<< HEAD
 	<input type="text" id="research" name="research">
 	<img src="img/logo_menu.png" id="logo_menu">
+=======
+	<img src="img\logo_menu.png" id="logo_menu">
 
+>>>>>>> 0d279516a74a47e06710fdc413ae67fbe7ff2097
 </header>
 <!-- Add your site or application content here -->
 <section id="researchWrapper">
