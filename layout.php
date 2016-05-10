@@ -20,6 +20,7 @@
 <![endif]-->
 <header>
 	<a href="index.php" id="logo">RILFLIX</a>
+	<img src="img\logo_menu.png" id="logo_menu">
 	
 </header>
 <!-- Add your site or application content here -->
