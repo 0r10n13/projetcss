@@ -58,4 +58,5 @@ $(document).ready()
 	$("#research").on('input',function(e){
 		theMovieDb.search.getMovie({"query":$("#research").val()}, successResearch, errorCB)
 	});
+
 };
