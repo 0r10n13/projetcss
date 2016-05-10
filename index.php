@@ -10,12 +10,17 @@ $layout = "layout.php";
 
 $route = !empty($_REQUEST['route']) ? $_REQUEST['route'] : "index";
 
-$htmlContent = "<h1>TESTOUILLE</h1>";
+$htmlContent = "list.html";
 
 switch ($route)
 {
 	case "index":
+		$htmlContent = "list.html";
 		break;
 }
 
+ob_start();
+require $htmlContent;
+$htmlContent = ob_get_contents();
+ob_get_clean();
 include $layout;
