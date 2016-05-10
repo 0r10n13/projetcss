@@ -42,8 +42,7 @@ function successGetById(data)
 	var movieById = JSON.parse(data);
 	var htmlByID = '';
 	console.log(data.result);
-	/*
-	displayDetails(data.result,);*/
+	/*displayDetails(data.result,);*/
 	$("#researchMovie").html(htmlSearch);
 };
 
