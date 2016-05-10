@@ -23,6 +23,8 @@
 </header>
 <!-- Add your site or application content here -->
 <input type="text" id="research" name="research">
+<section id="researchWrapper">
+</section>
 <section id="mainWrapper">
 	<?php
 	echo $htmlContent;

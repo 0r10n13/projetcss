@@ -38,7 +38,7 @@ function successResearch(data)
 		htmlSearch = htmlSearch.concat(createElement(movieSearch[i]));
 	};
 	htmlSearch = htmlSearch.concat('</section>');
-	$("#mainWrapper").append(htmlSearch);
+	$("#researchWrapper").html(htmlSearch);
 };
 
 function errorCB(data) {
