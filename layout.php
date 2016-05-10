@@ -13,9 +13,6 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/list.css">
-	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
-	<script src="js/vendor/tmdb-min.js"></script>
-	<script src="js/getMovie.js"></script>
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -33,6 +30,9 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="js/vendor/tmdb-min.js"></script>
+<script src="js/getMovie.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
