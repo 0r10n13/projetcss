@@ -37,13 +37,9 @@ function successResearch(data)
 	$("#researchMovie .listMovies").html(htmlSearch);
 };
 
-function successGetById(data)
+function successGetById(data, category)
 {
-	var movieById = JSON.parse(data);
-	var htmlByID = '';
-	console.log(data.result);
-	/*displayDetails(data.result,);*/
-	$("#researchMovie").html(htmlSearch);
+	displayDetails(data, category);
 };
 
 function errorCB(data) {
@@ -65,10 +61,49 @@ $(document).ready()
 		theMovieDb.search.getMovie({"query":$("#research").val()}, successResearch, errorCB)
 	});
 
-	$(".globalMovieWrapper").on('mouseenter',function () {
-		theMovieDb.movies.getById({"id":$this.attr("data-id") }, successGetById, errorCB)
+
+
+	/*$(".globalMovieWrapper").on('mouseenter',function () {
+
+        alert('test');
+        $.ajax({
+            url: 'http://api.themoviedb.org/3/movie/'+$(this).attr('data-id'),
+            type: 'get',
+            dataType: 'json',
+            data: {api_key: "58f8fe741b03b0ae4c9a2ed080e94041"},
+            success: function(data)
+            {
+                console.debug(data);
+                var category = $(this).attr('data-category');
+                successGetById(data, category);
+            },
+            error: function(x1, x2, x3)
+            {
+                console.debug(x1);
+            }
+        });
 	}).on('mouseleave',function ()
 	{
 		//$this.find("span").hide();
-	});
+	});*/
 };
+
+function getDetailsMovie(id, category)
+{
+    $.ajax({
+        url: 'http://api.themoviedb.org/3/movie/'+id,
+        type: 'get',
+        dataType: 'json',
+        data: {api_key: "58f8fe741b03b0ae4c9a2ed080e94041"},
+        success: function(data)
+        {
+            console.debug(data);
+            displayDetails(data, category);
+        },
+        error: function(x1, x2, x3)
+        {
+            console.debug(x1);
+        }
+    });
+}
+
