@@ -22,6 +22,7 @@
 	<a href="index.php" id="logo">RILFLIX</a>
 	<input type="text" id="research" name="research">
 	<img src="img/logo_menu.png" id="logo_menu">
+	<img src="img/fblogo.png" id="fb">
 
 </header>
 <!-- Add your site or application content here -->

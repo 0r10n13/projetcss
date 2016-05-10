@@ -33,7 +33,9 @@
     border: 1px solid black; }
 
 .movieDetailsGlobal {
-  display: none; }
+  display: none;
+  width: 550px;
+  margin: auto; }
 
 .globalMovieWrapper {
   width: 200px;
@@ -47,5 +49,16 @@
 
 .globalMovieWrapper:hover .movieItem {
   height: 140px; }
+
+#fb {
+  position: absolute;
+  left: 40%;
+  top: -16px;
+  -webkit-transition: top 0.8s;
+  -moz-transition: top 0.8s;
+  transition: top 0.8s; }
+
+#fb:hover {
+  top: 0px; }
 
 /*# sourceMappingURL=list.css.map */
