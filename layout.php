@@ -24,12 +24,21 @@
 <!-- Add your site or application content here -->
 <input type="text" id="research" name="research">
 <section id="researchWrapper">
-	<section id ="researchMovie"><h1>Recherche</h1></section>
+	<section id ="researchMovie"><h1>Recherche</h1>
+		<div class="listMovies"></div>
+		<div class="movieDetails"></div></section>
 </section>
 <section id="mainWrapper">
-<section id ="nowPlaying"><h1>Dans vos salles</h1></section>
-<section id ="popular"><h1>Populaire</h1></section>
-<section id ="topRated"><h1>Meilleures notes</h1></section>
+<section id ="nowPlaying"><h1>Dans vos salles</h1>
+	<div class="listMovies"></div>
+	<div class="movieDetails"></div>
+</section>
+<section id ="popular"><h1>Populaire</h1>
+	<div class="listMovies"></div>
+	<div class="movieDetails"></div></section>
+<section id ="topRated"><h1>Meilleures notes</h1>
+	<div class="listMovies"></div>
+	<div class="movieDetails"></div></section>
 </section>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
