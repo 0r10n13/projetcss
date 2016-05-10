@@ -1,44 +1,40 @@
 function successGetNowPlaying(data) {
 	var movieNowPlaying = JSON.parse(data);
-	var htmlNowPlaying = '<section id ="nowPlaying"><h1>Dans vos salles</h1>';
+	var htmlNowPlaying = '';
 	for (var i = movieNowPlaying.results.length - 1; i >= 0; i--) {
 		htmlNowPlaying = htmlNowPlaying.concat(createElement(movieNowPlaying.results[i]));
 	};
-	htmlNowPlaying = htmlNowPlaying.concat('</section>');
-	$("#mainWrapper").append(htmlNowPlaying);
+	$("#nowPlaying").append(htmlNowPlaying);
 };
 
 function successGetPopular(data)
 {
 	var moviePopular = JSON.parse(data);
-	var htmlPopular = '<section id ="popular"><h1>Populaire</h1>';
+	var htmlPopular = '';
 	for (var i = moviePopular.results.length - 1; i >= 0; i--) {
 		htmlPopular = htmlPopular.concat(createElement(moviePopular.results[i]));
 	};
-	htmlPopular = htmlPopular.concat('</section>');
-	$("#mainWrapper").append(htmlPopular);
+	$("#popular").append(htmlPopular);
 };
 
 function successTopRated(data)
 {
 	var movieTopRated = JSON.parse(data);
-	var htmlTopRated = '<section id ="topRated"><h1>Meilleures notes</h1>';
+	var htmlTopRated = '';
 	for (var i = movieTopRated.results.length - 1; i >= 0; i--) {
 		htmlTopRated = htmlTopRated.concat(createElement(movieTopRated.results[i]));
 	};
-	htmlTopRated = htmlTopRated.concat('</section>');
-	$("#mainWrapper").append(htmlTopRated);
+	$("#topRated").append(htmlTopRated);
 };
 
 function successResearch(data)
 {
 	var movieSearch = JSON.parse(data);
-	var htmlSearch = '<section id ="research"><h1>Recherche</h1>';
+	var htmlSearch = '';
 	for (var i = movieSearch.results.length - 1; i >= 0; i--) {
 		htmlSearch = htmlSearch.concat(createElement(movieSearch.results[i]));
 	};
-	htmlSearch = htmlSearch.concat('</section>');
-	$("#researchWrapper").html(htmlSearch);
+	$("#researchMovie").html(htmlSearch);
 };
 
 function errorCB(data) {
