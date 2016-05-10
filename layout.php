@@ -28,7 +28,7 @@
 <section id="researchWrapper">
 	<section id ="researchMovie"><h1>Recherche</h1>
 		<div class="listMovies"></div>
-		<div class="movieDetails" id="detailsresearch">
+		<div class="movieDetailsGlobal" id="detailsresearch">
 			<div class="movieItem" id="researchItemMovie">
 				<div class="moviePoster" id="researchItemPoster">
 					<img id="researchItemImg" src="http://image.tmdb.org/t/p/w342/dkMD5qlogeRMiEixC4YNPUvax2T.jpg" alt="poster">
@@ -59,7 +59,7 @@
 <section id="mainWrapper">
 <section id ="nowPlaying"><h1>Dans vos salles</h1>
 	<div class="listMovies"></div>
-	<div class="movieDetails" id="detailsnowplaying">
+	<div class="movieDetailsGlobal" id="detailsnowplaying">
 		<div class="movieItem" id="nowplayingItemMovie">
 			<div class="moviePoster" id="nowplayingItemPoster">
 				<img id="nowplayingItemImg" src="http://image.tmdb.org/t/p/w342/dkMD5qlogeRMiEixC4YNPUvax2T.jpg" alt="poster">
@@ -89,7 +89,7 @@
 </section>
 <section id ="popular"><h1>Populaire</h1>
 	<div class="listMovies"></div>
-	<div class="movieDetails" id="detailspopular">
+	<div class="movieDetailsGlobal" id="detailspopular">
 		<div class="movieItem" id="popularItemMovie">
 			<div class="moviePoster" id="popularItemPoster">
 				<img id="popularItemImg" src="http://image.tmdb.org/t/p/w342/dkMD5qlogeRMiEixC4YNPUvax2T.jpg" alt="poster">
@@ -119,7 +119,7 @@
 </section>
 <section id ="topRated"><h1>Meilleures notes</h1>
 	<div class="listMovies"></div>
-	<div class="movieDetails" id="detailstoprated">
+	<div class="movieDetailsGlobal" id="detailstoprated">
 		<div class="movieItem" id="topratedItemMovie">
 			<div class="moviePoster" id="topratedItemPoster">
 				<img id="topratedItemImg" src="http://image.tmdb.org/t/p/w342/dkMD5qlogeRMiEixC4YNPUvax2T.jpg" alt="poster">
