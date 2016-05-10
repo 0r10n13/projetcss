@@ -20,11 +20,10 @@
 <![endif]-->
 <header>
 	<a href="index.php" id="logo">RILFLIX</a>
-	<img src="img\logo_menu.png" id="logo_menu">
-	
+	<input type="text" id="research" name="research">
+	<img src="img/logo_menu.png" id="logo_menu">
 </header>
 <!-- Add your site or application content here -->
-<input type="text" id="research" name="research">
 <section id="researchWrapper">
 	<section id ="researchMovie"><h1>Recherche</h1>
 		<div class="listMovies"></div>

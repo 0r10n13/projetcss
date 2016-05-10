@@ -38,8 +38,11 @@ header {
   text-decoration: none; }
 
 #logo_menu {
-  width: 2%;
-  margin-left: 80%; }
+  width: 3%;
+  margin-left: 74%; }
+
+#research {
+  margin-left: 5%; }
 
 /*
  * Remove text-shadow in selection highlight:
