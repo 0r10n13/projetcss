@@ -1,7 +1,8 @@
 function createElement(movie, category)
 {
     var html = "";
-    html = '<div class="globalMovieWrapper" data-id="'+movie.id+'" data-category="'+category+'">'+
+    html = '<div class="globalMovieWrapper" data-id="'+movie.id+'" data-category="'+category+'" ' +
+        'onmouseover="getDetailsMovie('+movie.id+', \''+category+'\')" onmouseout="hideDetails(\''+category+'\')">'+
             '<div class="globalMovie">'+
                 '<img src="http://image.tmdb.org/t/p/w342'+movie.poster_path+'" alt="picture">'+
             '</div>'+
@@ -14,7 +15,7 @@ function createElement(movie, category)
 function displayDetails(movie, category)
 {
     var html = "";
-
+    console.debug(category);
     $("#"+category+"ItemImg").attr('src', 'http://image.tmdb.org/t/p/w342'+movie.poster_path);
     $("#"+category+"ItemTitle").text(movie.title);
     $("#"+category+"ItemNote").text(movie.vote_average);
@@ -35,3 +36,4 @@ $(document).ready(function(){
     displayDetails(movie, 'popular');*/
 
 });
+
