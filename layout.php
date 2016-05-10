@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
-	<script src="js/tmdb-min.js"></script>
+	<script src="js/vendor/tmdb-min.js"></script>
 	<script src="js/getMovie.js"></script>
 </head>
 <body>
