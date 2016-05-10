@@ -28,19 +28,124 @@
 <section id="researchWrapper">
 	<section id ="researchMovie"><h1>Recherche</h1>
 		<div class="listMovies"></div>
-		<div class="movieDetails"></div></section>
+		<div class="movieDetails">
+			<div class="movieItem" id="researchItemMovie">
+				<div class="moviePoster" id="researchItemPoster">
+					<img id="researchItemImg" src="http://image.tmdb.org/t/p/w342/dkMD5qlogeRMiEixC4YNPUvax2T.jpg" alt="poster">
+					<span class="movieTitle" id="researchItemTitle">Titre</span>
+				</div><div
+					class="movieDetails">
+					<div class="detailsRating">
+						Note : <span id="researchItemNote"></span>/10
+					</div>
+					<div>
+						<span class="detailsTitle">Description : </span>
+						<span id="researchItemDescription">Test</span>
+					</div>
+
+					<div>
+						<span class="detailsTitle">Genre : </span>
+						<span id="researchItemGenre">Test</span>
+					</div>
+					<div>
+						<span class="detailsTitle">Date de sortie : </span>
+						<span id="researchItemDate">Test</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </section>
 <section id="mainWrapper">
 <section id ="nowPlaying"><h1>Dans vos salles</h1>
 	<div class="listMovies"></div>
-	<div class="movieDetails"></div>
+	<div class="movieDetails">
+		<div class="movieItem" id="nowplayingItemMovie">
+			<div class="moviePoster" id="nowplayingItemPoster">
+				<img id="nowplayingItemImg" src="http://image.tmdb.org/t/p/w342/dkMD5qlogeRMiEixC4YNPUvax2T.jpg" alt="poster">
+				<span class="movieTitle" id="nowplayingItemTitle">Titre</span>
+			</div><div
+				class="movieDetails">
+				<div class="detailsRating">
+					Note : <span id="nowplayingItemNote"></span>/10
+				</div>
+				<div>
+					<span class="detailsTitle">Description : </span>
+					<span id="nowplayingItemDescription">Test</span>
+				</div>
+
+				<div>
+					<span class="detailsTitle">Genre : </span>
+					<span id="nowplayingItemGenre">Test</span>
+				</div>
+				<div>
+					<span class="detailsTitle">Date de sortie : </span>
+					<span id="nowplayingItemDate">Test</span>
+				</div>
+			</div>
+		</div>
+
+	</div>
 </section>
 <section id ="popular"><h1>Populaire</h1>
 	<div class="listMovies"></div>
-	<div class="movieDetails"></div></section>
+	<div class="movieDetails">
+		<div class="movieItem" id="popularItemMovie">
+			<div class="moviePoster" id="popularItemPoster">
+				<img id="popularItemImg" src="http://image.tmdb.org/t/p/w342/dkMD5qlogeRMiEixC4YNPUvax2T.jpg" alt="poster">
+				<span class="movieTitle" id="popularItemTitle">Titre</span>
+			</div><div
+				class="movieDetails">
+				<div class="detailsRating">
+					Note : <span id="popularItemNote"></span> /10
+				</div>
+				<div>
+					<span class="detailsTitle">Description : </span>
+					<span id="popularItemDescription">Test</span>
+				</div>
+
+				<div>
+					<span class="detailsTitle">Genre : </span>
+					<span id="popularItemGenre">Test</span>
+				</div>
+				<div>
+					<span class="detailsTitle">Date de sortie : </span>
+					<span id="popularItemDate">Test</span>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
 <section id ="topRated"><h1>Meilleures notes</h1>
 	<div class="listMovies"></div>
-	<div class="movieDetails"></div></section>
+	<div class="movieDetails">
+		<div class="movieItem" id="topratedItemMovie">
+			<div class="moviePoster" id="topratedItemPoster">
+				<img id="topratedItemImg" src="http://image.tmdb.org/t/p/w342/dkMD5qlogeRMiEixC4YNPUvax2T.jpg" alt="poster">
+				<span class="movieTitle" id="topratedItemTitle">Titre</span>
+			</div><div
+				class="movieDetails">
+				<div class="detailsRating">
+					Note : <span id="topratedItemNote"></span> /10
+				</div>
+				<div>
+					<span class="detailsTitle">Description : </span>
+					<span id="topratedItemDescription">Test</span>
+				</div>
+
+				<div>
+					<span class="detailsTitle">Genre : </span>
+					<span id="topratedItemGenre">Test</span>
+				</div>
+				<div>
+					<span class="detailsTitle">Date de sortie : </span>
+					<span id="topratedItemDate">Test</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 </section>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
