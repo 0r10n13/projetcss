@@ -1,10 +1,14 @@
-function successCB(data) {
-    console.log("Success callback: " + data);
+function successGetNowPlaying(data) {
+	var movieNowPlaying = JSON.parse(data);
+	var htmlNowPlaying = "";
+	for (var i = movieNowPlaying.length - 1; i >= 0; i--) {
+		htmlNowPlaying = htmlNowPlaying.concat(createElement(movieNowPlaying[i]));
+	};
+
 };
 
 function errorCB(data) {
-            console.log("Error callback: " + data);
-    };
+	console.log("Error callback: " + data);
+};
 
-var nowplaying = theMovieDb.movies.getNowPlaying({}, successCB, errorCB);
-console.log(nowplaying);
+theMovieDb.movies.getNowPlaying({}, successGetNowPlaying, errorCB);
