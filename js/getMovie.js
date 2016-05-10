@@ -4,7 +4,7 @@ function successGetNowPlaying(data) {
 	for (var i = movieNowPlaying.results.length - 1; i >= 0; i--) {
 		htmlNowPlaying = htmlNowPlaying.concat(createElement(movieNowPlaying.results[i],'nowplaying'));
 	};
-	$("#nowPlaying").append(htmlNowPlaying);
+	$("#nowPlaying .listMovies").append(htmlNowPlaying);
 };
 
 function successGetPopular(data)
@@ -14,7 +14,7 @@ function successGetPopular(data)
 	for (var i = moviePopular.results.length - 1; i >= 0; i--) {
 		htmlPopular = htmlPopular.concat(createElement(moviePopular.results[i],'popular'));
 	};
-	$("#popular").append(htmlPopular);
+	$("#popular .listMovies").append(htmlPopular);
 };
 
 function successTopRated(data)
@@ -24,7 +24,7 @@ function successTopRated(data)
 	for (var i = movieTopRated.results.length - 1; i >= 0; i--) {
 		htmlTopRated = htmlTopRated.concat(createElement(movieTopRated.results[i],'toprated'));
 	};
-	$("#topRated").append(htmlTopRated);
+	$("#topRated .listMovies").append(htmlTopRated);
 };
 
 function successResearch(data)
@@ -34,7 +34,7 @@ function successResearch(data)
 	for (var i = movieSearch.results.length - 1; i >= 0; i--) {
 		htmlSearch = htmlSearch.concat(createElement(movieSearch.results[i],'research'));
 	};
-	$("#researchMovie").html(htmlSearch);
+	$("#researchMovie .listMovies").html(htmlSearch);
 };
 
 function successGetById(data)
