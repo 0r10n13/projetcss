@@ -1,4 +1,5 @@
 .movieItem {
+  margin-top: 20px;
   height: 0;
   overflow: hidden;
   -webkit-transition: height 0.8s;
@@ -30,12 +31,15 @@
     height: 100%;
     border: 1px solid black; }
 
-.globalMovie {
+.globalMovieWrapper {
   width: 200px;
-  height: 112px; }
-  .globalMovie img {
+  display: inline-block; }
+  .globalMovieWrapper .globalMovie {
     width: 200px;
     height: 112px; }
+    .globalMovieWrapper .globalMovie img {
+      width: 200px;
+      height: 112px; }
 
 .globalMovieWrapper:hover .movieItem {
   height: 140px; }
