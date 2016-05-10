@@ -1,0 +1,61 @@
+.movieItem{
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.8s;
+  -moz-transition: height 0.8s;
+  transition: height 0.8s;
+
+  position: relative;
+  //height: 140px;
+  width: 550px;
+
+  .moviePoster{
+    width: 250px;
+    position: relative;
+    display: inline-block;
+
+    img{
+      width: 250px;
+      z-index:1;
+    }
+
+    .movieTitle{
+      z-index: 10;
+      width: 100%;
+      background-color: #555555;
+      opacity: 0.7;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      color: white;
+    }
+  }
+
+  .movieDetails{
+    display: inline-block;
+    font-size: 14px;
+    width: 300px;
+    height: 100%;
+    border: 1px solid black;
+
+    .detailsRating{
+
+    }
+  }
+
+}
+
+.globalMovie{
+  //height: 120px;
+  width: 200px;
+  height: 112px;
+  img {
+    width: 200px;
+    height: 112px;
+  }
+}
+
+.globalMovieWrapper:hover .movieItem{
+  height: 140px;
+}
