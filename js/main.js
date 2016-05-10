@@ -15,13 +15,14 @@ function createElement(movie, category)
 function displayDetails(movie, category)
 {
     var html = "";
-    console.debug(category);
+
     $("#"+category+"ItemImg").attr('src', 'http://image.tmdb.org/t/p/w342'+movie.poster_path);
     $("#"+category+"ItemTitle").text(movie.title);
     $("#"+category+"ItemNote").text(movie.vote_average);
     $("#"+category+"ItemDescription").text(movie.overview);
     $("#"+category+"ItemGenre").text(movie.genre);
     $("#"+category+"ItemDate").text(movie.release_date);
+    $("#details"+category).show();
 }
 
 $(document).ready(function(){
@@ -37,3 +38,6 @@ $(document).ready(function(){
 
 });
 
+function hideDetails(category){
+    $("#details"+category).hide();
+}
