@@ -11,3 +11,27 @@ function createElement(movie, category)
 }
 
 
+function displayDetails(movie, category)
+{
+    var html = "";
+
+    $("#"+category+"ItemImg").attr('src', 'http://image.tmdb.org/t/p/w342'+movie.poster_path);
+    $("#"+category+"ItemTitle").text(movie.title);
+    $("#"+category+"ItemNote").text(movie.vote_average);
+    $("#"+category+"ItemDescription").text(movie.overview);
+    $("#"+category+"ItemGenre").text(movie.genre);
+    $("#"+category+"ItemDate").text(movie.release_date);
+}
+
+$(document).ready(function(){
+    /*var movie = Array();
+    movie.poster_path = "/dkMD5qlogeRMiEixC4YNPUvax2T.jpg";
+    movie.title = "Titre";
+    movie.vote_average = "4,5";
+    movie.overview = "Description";
+    movie.genre = "Test";
+    movie.release_date = "today";
+
+    displayDetails(movie, 'popular');*/
+
+});
